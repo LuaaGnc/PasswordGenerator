@@ -1,6 +1,6 @@
 from random import shuffle, randint
 
-def gerador(comprimento):
+def gerador_password(comprimento):
     """ Generates a password with a certain lenght
 
     Args:
@@ -16,12 +16,13 @@ def gerador(comprimento):
     password_list = list(password_caracteres[0:90:])
     shuffle(password_list)
     
-    # Quebra quando a password tiver o mesmo comprimento que o desejado
+    # Apresenta a lista de caracteres da password - Quebra quando a password tiver o mesmo comprimento que o desejado
     while len(password_list) > comprimento:
         password_list.pop(randint(0, len(password_list) - 1))
-        
+    
+    # Passa de Lista de Strings para String
     for item in range(0, len(password_list)):
         password_string += password_list[item]
+    
     return password_string
-a = gerador(20)
-print(a)
+
