@@ -1,6 +1,6 @@
 import os.path
 
-PATH = 'C:\\Users\\luisg\\OneDrive\\Ambiente de Trabalho\\PasswordGenerator\\db\\passwords.txt'
+PATH = 'YOUR\\PATH\\TO\\HERE\\PasswordGenerator\\db\\passwords.txt'
 
 def filefunc(escrever=False, ler=False):
 
